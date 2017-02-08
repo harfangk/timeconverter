@@ -9,12 +9,14 @@ defmodule Timeconverter.Router do
   end
 
   get "/" do
+    conn = Plug.Conn.fetch_query_params(conn)
+    result = inspect(Timeconverter.convert_datetime(conn.params))
     conn
-    |> send_resp(200, "wow!")
+    |> send_resp(200, result)
   end
 
   match _ do
     conn
-    |> send_resp(200, "woooow!")
+    |> send_resp(404, "This is not the page you are looking for")
   end
 end
