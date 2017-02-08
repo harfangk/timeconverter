@@ -12,6 +12,7 @@ defmodule Timeconverter.Application do
     children = [
       # Starts a worker by calling: Timeconverter.Worker.start_link(arg1, arg2, arg3)
       # worker(Timeconverter.Worker, [arg1, arg2, arg3]),
+      worker(Timeconverter.Router, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
