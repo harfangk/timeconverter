@@ -1,19 +1,10 @@
 # Timeconverter
 
-**TODO: Add description**
+A sample app for a tutorial to build a minimal Elixir app using only Cowboy and
+Plug. It receives a datetime through HTTP request parameters and convert it
+between iso8601 and unix formats.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `timeconverter` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:timeconverter, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/timeconverter](https://hexdocs.pm/timeconverter).
-
+Tutorial can be found
+[here](https://harfangk.github.io/2017/01/26/create-minimal-elixir-web-app-and-deploy-to-heroku.html)
+and the deployed app running on Heroku can be found
+[here](https://blooming-thicket-28926.herokuapp.com/).
